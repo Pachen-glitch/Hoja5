@@ -2,7 +2,15 @@ from tkinter import *
 import simulador 
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import matplotlib.pyplot as plt
+"""Simulador de Procesos con Interfaz Gráfica en Tkinter
+Jorge Martinez 2026
+Hecho en Python 3.10
+Este programa simula la ejecución de procesos en un sistema con recursos limitados (RAM y CPU).
+Permite configurar el número de procesos, el intervalo de llegada, la capacidad de RAM, el
+número de CPUs y las instrucciones por turno. Además, incluye un experimento para analizar el tiempo promedio en función del número de procesos.
 
+se usaron las librerías SimPy para la simulación, NumPy para el cálculo de estadísticas y Matplotlib para la visualización de resultados. La interfaz gráfica se construyó con Tkinter, permitiendo al usuario interactuar fácilmente con el simulador y visualizar los resultados de manera clara.
+"""
 
 class App(Tk):
     def __init__(self):
